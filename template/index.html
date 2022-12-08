@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVT-Romero</title>
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+                <th>Email</th>
+                <th>Tel. Movil</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% block contenido %}
+            {% endblock %}
+        </tbody>
+    </table>
+    
+</body>
+</html>
